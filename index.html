@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Navbar Example</title>
+  <title>Portodit</title>
   <style>
 .navbar {
   background-color: white;
@@ -42,6 +42,104 @@
       scale: 0.5;
     }
 
+/* hero */
+.hero {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.adit-image {
+  width: 500px;
+  height: auto;
+  margin-left: 80px;
+  margin-top: 120px;
+}
+
+.hero-content {
+  color: #262626;
+  text-align: left; 
+  margin-left: 70px;
+  margin-top: 50px;
+
+}  
+
+.name {
+  font-size: 64px;
+  line-height: 84px;
+  font-weight: 800;
+}
+
+.name span {
+  background: -webkit-linear-gradient(-90deg, rgb(42.000001296401024, 250.00000029802322, 223.00000190734863) 0%, rgb(76.0000030696392, 131.00000739097595, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.designation {
+  color: #3C3C3C;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 800;
+}
+
+.welcome {
+  width: 600px;
+  color: #707070;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  font-style: normal;
+}
+
+.hai-image {
+  width: 67px;
+  height: 67px;
+  margin-left: -180px;
+  margin-top: -100px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center; /* Ubah menjadi rata tengah pada versi mobile */
+  }
+
+  .adit-image {
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    scale: 0.8;
+  }
+
+  .name {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .designation {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .hero-content {
+  color: #262626;
+  text-align: center; /* Tambahkan properti ini untuk rata tengah pada versi mobile */
+}
+
+  .welcome {
+    width: auto;
+    font-size: 20px; /* Ubah ukuran font pada versi mobile */
+    text-align: center; /* Tambahkan properti ini untuk rata tengah pada versi mobile */
+  }
+}
+
 
   </style>
 </head>
@@ -56,7 +154,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
@@ -69,6 +167,21 @@
       </div>
     </div>
   </nav>
+
+  <div class="hero">
+    <div class="content-wrapper">
+      <img src="img/adit.png" alt="Adit" class="adit-image">
+      <div class="hero-content">
+        <h1 class="name">Hi, I'm <span>Adhit</span></h1>
+        <h2 class="designation">UI/UX &amp; Web Designer</h2>
+        <p class="welcome">Welcome to my personal portfolio website. I hope you will enjoy every moment here.</p>
+      </div>
+      <img src="img/hai.png" alt="Hai" class="hai-image">
+    </div>
+  </div>
+  
+  
+  
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
